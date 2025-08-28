@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+
+            <%= detail.manufacturer %>
+
+                <%= detail.model %>
+
+        <li>
+            In Stock -
+            <%= detail.inStock %>
+        </li>
+        <li>
+            Price -
+            <%= detail.price %>
+        </li>
+        <li>
+            Stock Left -
+            <%= detail.stock %>
+        </li>
+    </ul>
+
+    <a href="/">Back</a>
+    <a href="/delete/<%= detail.id  %>">Delete</a>
+</body>
+
+</html>
