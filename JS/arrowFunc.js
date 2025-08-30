@@ -1,5 +1,11 @@
-const arrow = ()=>{
-   (console.log("this is arrow func"))
+const norm = function (arrow) {
+	const returnVal = arrow();
+	console.log(returnVal);
 }
 
-arrow();
+norm(()=>{
+	const a= 1;
+	console.log("this is inside callback");
+	return a ;
+})
+
